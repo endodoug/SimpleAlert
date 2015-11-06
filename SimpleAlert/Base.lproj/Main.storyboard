@@ -17,25 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="XeZ-8X-sXV">
-                                <rect key="frame" x="166" y="121" width="268" height="357"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ke-3O-S3J">
+                                <rect key="frame" x="188" y="180" width="225" height="241"/>
                                 <animations/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time: 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ke-3O-S3J">
-                                <rect key="frame" x="241" y="62" width="118" height="36"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="200"/>
+                                <color key="textColor" red="0.81917840242385864" green="0.890097975730896" blue="0.99289065599441528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="1" height="1"/>
+                                <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.32995940019999997" green="0.63032452679999995" blue="0.96823529409999998" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="XeZ-8X-sXV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GWz-L8-uFm"/>
-                            <constraint firstItem="XeZ-8X-sXV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pQO-Xy-1LM"/>
+                            <constraint firstItem="6Ke-3O-S3J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JQA-EG-s86"/>
+                            <constraint firstItem="6Ke-3O-S3J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gzc-xb-xrR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -47,7 +43,4 @@
             <point key="canvasLocation" x="340" y="429"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Clock" width="200" height="265"/>
-    </resources>
 </document>

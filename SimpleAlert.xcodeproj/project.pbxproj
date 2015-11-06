@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B71CD1621BEC6DEC00F7EDBB /* SimpleAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CD1611BEC6DEC00F7EDBB /* SimpleAlertTests.swift */; };
 		B75ABF7B1BEB11FE00AC7BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ABF7A1BEB11FE00AC7BBA /* AppDelegate.swift */; };
 		B75ABF7D1BEB11FE00AC7BBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ABF7C1BEB11FE00AC7BBA /* ViewController.swift */; };
 		B75ABF801BEB11FE00AC7BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75ABF7E1BEB11FE00AC7BBA /* Main.storyboard */; };
@@ -14,7 +15,20 @@
 		B75ABF851BEB11FE00AC7BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75ABF831BEB11FE00AC7BBA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B71CD1641BEC6DEC00F7EDBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75ABF6F1BEB11FE00AC7BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B75ABF761BEB11FE00AC7BBA;
+			remoteInfo = SimpleAlert;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		B71CD15F1BEC6DEB00F7EDBB /* SimpleAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71CD1611BEC6DEC00F7EDBB /* SimpleAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlertTests.swift; sourceTree = "<group>"; };
+		B71CD1631BEC6DEC00F7EDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B75ABF771BEB11FE00AC7BBA /* SimpleAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75ABF7A1BEB11FE00AC7BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B75ABF7C1BEB11FE00AC7BBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B71CD15C1BEC6DEB00F7EDBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B75ABF741BEB11FE00AC7BBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +56,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B71CD1601BEC6DEC00F7EDBB /* SimpleAlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				B71CD1611BEC6DEC00F7EDBB /* SimpleAlertTests.swift */,
+				B71CD1631BEC6DEC00F7EDBB /* Info.plist */,
+			);
+			path = SimpleAlertTests;
+			sourceTree = "<group>";
+		};
 		B75ABF6E1BEB11FE00AC7BBA = {
 			isa = PBXGroup;
 			children = (
 				B75ABF791BEB11FE00AC7BBA /* SimpleAlert */,
+				B71CD1601BEC6DEC00F7EDBB /* SimpleAlertTests */,
 				B75ABF781BEB11FE00AC7BBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				B75ABF771BEB11FE00AC7BBA /* SimpleAlert.app */,
+				B71CD15F1BEC6DEB00F7EDBB /* SimpleAlertTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +99,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B71CD15E1BEC6DEB00F7EDBB /* SimpleAlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B71CD1681BEC6DEC00F7EDBB /* Build configuration list for PBXNativeTarget "SimpleAlertTests" */;
+			buildPhases = (
+				B71CD15B1BEC6DEB00F7EDBB /* Sources */,
+				B71CD15C1BEC6DEB00F7EDBB /* Frameworks */,
+				B71CD15D1BEC6DEB00F7EDBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B71CD1651BEC6DEC00F7EDBB /* PBXTargetDependency */,
+			);
+			name = SimpleAlertTests;
+			productName = SimpleAlertTests;
+			productReference = B71CD15F1BEC6DEB00F7EDBB /* SimpleAlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B75ABF761BEB11FE00AC7BBA /* SimpleAlert */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B75ABF891BEB11FE00AC7BBA /* Build configuration list for PBXNativeTarget "SimpleAlert" */;
@@ -94,6 +144,10 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Doug Harper";
 				TargetAttributes = {
+					B71CD15E1BEC6DEB00F7EDBB = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B75ABF761BEB11FE00AC7BBA;
+					};
 					B75ABF761BEB11FE00AC7BBA = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -113,11 +167,19 @@
 			projectRoot = "";
 			targets = (
 				B75ABF761BEB11FE00AC7BBA /* SimpleAlert */,
+				B71CD15E1BEC6DEB00F7EDBB /* SimpleAlertTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B71CD15D1BEC6DEB00F7EDBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B75ABF751BEB11FE00AC7BBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +193,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B71CD15B1BEC6DEB00F7EDBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71CD1621BEC6DEC00F7EDBB /* SimpleAlertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B75ABF731BEB11FE00AC7BBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +211,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B71CD1651BEC6DEC00F7EDBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B75ABF761BEB11FE00AC7BBA /* SimpleAlert */;
+			targetProxy = B71CD1641BEC6DEC00F7EDBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B75ABF7E1BEB11FE00AC7BBA /* Main.storyboard */ = {
@@ -162,6 +240,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B71CD1661BEC6DEC00F7EDBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doug-harper.SimpleAlertTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleAlert.app/SimpleAlert";
+			};
+			name = Debug;
+		};
+		B71CD1671BEC6DEC00F7EDBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doug-harper.SimpleAlertTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleAlert.app/SimpleAlert";
+			};
+			name = Release;
+		};
 		B75ABF871BEB11FE00AC7BBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -270,6 +372,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B71CD1681BEC6DEC00F7EDBB /* Build configuration list for PBXNativeTarget "SimpleAlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B71CD1661BEC6DEC00F7EDBB /* Debug */,
+				B71CD1671BEC6DEC00F7EDBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B75ABF721BEB11FE00AC7BBA /* Build configuration list for PBXProject "SimpleAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -286,6 +396,7 @@
 				B75ABF8B1BEB11FE00AC7BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

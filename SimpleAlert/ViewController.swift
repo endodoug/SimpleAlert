@@ -15,31 +15,29 @@ class ViewController: UIViewController {
     var seconds = 0
     var timer = NSTimer()
     
+    /** Start timer when the view loads **/
     override func viewDidLoad() {
         super.viewDidLoad()
         
         timerSetUp()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    /** Setup timer. Start at 60, update timerLabel, set timer for 1 second **/
     func timerSetUp() {
+        
         seconds = 60
         
-        timerLabel.text = "Time: \(seconds)"
+        timerLabel.text = "\(seconds)"
         
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "subtractTime", userInfo: nil, repeats: true)
     }
     
+    /** Subtract time & update TimerLabel.  Stop timer and fire off an alert message when seconds reaches 0 **/
     func subtractTime() {
         seconds--
-        timerLabel.text = "Time: \(seconds)"
+        timerLabel.text = "\(seconds)"
         
         if (seconds) == 0 {
-            print("we reached 0")
             timer.invalidate()
             
             let alert = UIAlertController(title: "Please Update Your License", message: nil, preferredStyle: .Alert)
