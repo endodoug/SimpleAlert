@@ -27,8 +27,4 @@ class SimpleAlertTests: XCTestCase {
         XCTAssert(simpleAlert.seconds >= 0)
     }
     
-    func testUIAlertViewShowsAfterSecondsReachesZero() {
-        
-    }
-    
 }

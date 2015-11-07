@@ -26,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,6 +36,16 @@
                BlueprintIdentifier = "B71CD15E1BEC6DEB00F7EDBB"
                BuildableName = "SimpleAlertTests.xctest"
                BlueprintName = "SimpleAlertTests"
+               ReferencedContainer = "container:SimpleAlert.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B71CD1811BEDBFFF00F7EDBB"
+               BuildableName = "SimpleAlertUITests.xctest"
+               BlueprintName = "SimpleAlertUITests"
                ReferencedContainer = "container:SimpleAlert.xcodeproj">
             </BuildableReference>
          </TestableReference>
