@@ -35,17 +35,4 @@ class SimpleAlertUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testAlertWorks() {
-        
-        let alertView = app.alerts.element
-        let alertViewIsShowing = alertView.frame.size.width > 0
-        XCTAssertTrue(alertViewIsShowing)
-        
-    }
-    
-    func testWillResign() {
-        
-        
-        
-    }
 }
