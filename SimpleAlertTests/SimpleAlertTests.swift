@@ -74,6 +74,18 @@ class SimpleAlertTests: XCTestCase {
         XCTAssertTrue(sut.presentedViewController is UIAlertController)
     }
     
-
+    func testAlertControllerProperties() {
+        // given
+        sut.seconds = 1
+        
+        // when
+        sut.subtractTime()
+        
+        // then
+        let alertController = sut.presentedViewController as! UIAlertController
+        XCTAssertEqual(alertController.title, "Please Update Your License")
+        XCTAssertNil(alertController.message)
+        print("actions: \(alertController.actions)")
+    }
     
 }

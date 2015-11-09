@@ -1,0 +1,19 @@
+*** PROJECT DOCUMENTATION ***
+
+- Supports iOS 9.1 and above.
+- Universal application, supports iPhone 4s and later, and iPads.
+- Requires UIKit and Foundation frameworks.
+- 100% Test Coverage.
+- Builds with Xcode 7.
+- Requires Swift 2.0.
+
+
+*** Notes ***
+
+- All work is done in the View Controller using Swift 2.0
+- Test Case coverage is 100% 
+- Used Auto Layout to create a universal app that works in Portrait and Landscape.  Not a lot of work, but it’s done. 
+
+you can contact me on twitter -> @endodoug
+
+Thanks for reading.
